@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E0F1E8;
+}
+
+form{
+  background-color: white;
+  height: 95dvh;
+  margin-top: 2.5dvh;
+  width: 95dvw;
+  margin-left: 2.5dvw;
+  padding: 10px;
+  border-radius: 10px;
+}
