@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +8,8 @@
 
 body{
   background-color: #E0F1E8;
+  font-family: Karla;
+  color: #2A4144;
 }
 
 form{
@@ -14,6 +18,49 @@ form{
   margin-top: 2.5dvh;
   width: 95dvw;
   margin-left: 2.5dvw;
-  padding: 10px;
+  padding: 2rem;
   border-radius: 10px;
 }
+
+h1{
+  margin-bottom: 30px;
+}
+
+input{
+  width: 295px;
+  height: 51px;
+  border-radius: 8px;
+  border-color: #86A2A5;
+  border-width: 1px;
+  margin: 10px 0 20px;
+}
+
+.inputRadio{
+  width: 19.5px;
+  height: 19.5px;
+}
+
+.inputRadioDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputMessage{
+  height: 240px;
+}
+
+.inputCheckboxDiv{
+  display: flex;
+}
+
+.inputCheckbox{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.submit{
+  background-color: #0C7D69;
+  color: white;
+}
+
