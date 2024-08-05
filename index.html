@@ -14,30 +14,42 @@
       <div>
         <h1>Contact Us</h1>
       </div>
-      <div>
-        <label for="FirstName">First Name</label>
-        <input type="text" name="FirstName">
+      <div class="row">
+        <div class="names">
+          <label for="FirstName">First Name <span class="star">*</span></label>
+          <input  type="text" name="FirstName" required>
+        </div>
+        <div class="names">
+          <label for="LastName">Last Name <span class="star">*</span></label>
+          <input  type="text" name="LastName" required>
+        </div>
       </div>
+      
       <div>
-        <label for="LastName">Last Name</label>
-        <input type="text" name="LastName">
-      </div>
-      <div>
-        <label for="EmailAdress">Email Adress</label>
-        <input type="text" name="EmailAdress">
+        <label for="EmailAdress">Email Adress <span class="star">*</span></label>
+        <input class="large" type="email" name="EmailAdress" required>
       </div>
       <div class="inputRadioDiv">
-        <label for="QueryType">Query Type</label>
-        <input class="inputRadio" type="radio" name="QueryType" id="">
-        <input class="inputRadio" type="radio" name="QueryType" id="">
+        <label for="QueryType">Query Type <span class="star">*</span></label>
+        <div class="row">
+          <div class="divRadio">
+            <input class="inputRadio" type="radio" name="QueryType" id="">
+            <p>General Enquiry</p>
+          </div>
+          <div class="divRadio">
+            <input class="inputRadio" type="radio" name="QueryType" id="">
+            <p>Support Request</p>
+          </div>
+        </div>
+        
       </div>
       <div>
-        <label for="message">Message</label>
-        <input class="inputMessage" type="text" name="message" id="">
+        <label for="message">Message <span class="star">*</span></label>
+        <textarea class="MessageArea large" name="message" id=""></textarea>
       </div>
       <div class="inputCheckboxDiv">
         <input class="inputCheckbox" type="checkbox" name="checkbox" id="">
-        <label for="checkbox">I consent to being contacted by the team</label>
+        <label class="CheckBoxLabel" for="checkbox">I consent to being contacted by the team <span class="star">*</span></label>
       </div>
       <div>
         <input class="submit" type="submit" value="Submit">
