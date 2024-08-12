@@ -15,42 +15,57 @@
         <h1>Contact Us</h1>
       </div>
       <div class="row">
-        <div class="names">
+        <div id="error" class="names">
           <label for="FirstName">First Name <span class="star">*</span></label>
-          <input  type="text" name="FirstName" required>
+          <input class="errorInput"  type="text" name="FirstName" id="firstname" required >
+          <p class="errorP" id="firstName">error</p>
         </div>
-        <div class="names">
+
+        <div id="error" class="names">
           <label for="LastName">Last Name <span class="star">*</span></label>
-          <input  type="text" name="LastName" required>
+          <input class="errorInput" type="text" name="LastName" id="lastname" required >
+          <p class="errorP" id="lastName">error</p>
         </div>
       </div>
       
-      <div>
+      <div id="error">
         <label for="EmailAdress">Email Adress <span class="star">*</span></label>
-        <input class="large" type="email" name="EmailAdress" required>
+        <input class="large errorInput" type="email" name="EmailAdress" id="email" required>
+        <p class="errorP" id="emailP">error</p>
       </div>
-      <div class="inputRadioDiv">
+
+      <div id="InputRadioAll" class="inputRadioDiv">
         <label for="QueryType">Query Type <span class="star">*</span></label>
         <div class="row">
-          <div class="divRadio">
-            <input class="inputRadio" type="radio" name="QueryType" id="">
-            <p>General Enquiry</p>
+          <div id="radio1" class="divRadio">
+            <input class="inputRadio" type="radio" name="QueryType" id="inputRadio1" value="General Enquiry" required>
+             <p>General Enquiry</p>
           </div>
-          <div class="divRadio">
-            <input class="inputRadio" type="radio" name="QueryType" id="">
+          <div id="radio2" class="divRadio">
+            <input class="inputRadio" type="radio" name="QueryType" id="inputRadio2" value="Support Request" required>
             <p>Support Request</p>
           </div>
+          
         </div>
-        
+        <p class="errorP errorPradio" id="radioP">error</p>
       </div>
-      <div>
+
+      <div id="error">
         <label for="message">Message <span class="star">*</span></label>
-        <textarea class="MessageArea large" name="message" id=""></textarea>
+        <textarea class="MessageArea large errorInput" name="message" id="messagearea" required></textarea>
+        <p class="errorP" id="messageP">error</p>
       </div>
-      <div class="inputCheckboxDiv">
-        <input class="inputCheckbox" type="checkbox" name="checkbox" id="">
+
+      <div>
+        <div class="inputCheckboxDiv">
+        <input class="inputCheckbox" type="checkbox" name="checkbox" id="inputcheckbox" required>
         <label class="CheckBoxLabel" for="checkbox">I consent to being contacted by the team <span class="star">*</span></label>
+        </div>
+        <div>
+          <p class="errorP" id="checkboxP">error</p>
+        </div>
       </div>
+
       <div>
         <input class="submit" type="submit" value="Submit">
       </div>

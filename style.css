@@ -102,6 +102,19 @@ input:hover, textarea:hover, .divRadio:hover{
   background-color: #095244;
 }
 
+.errorP{
+  color: #D73C3C;
+  margin: -10px 0 20px;
+}
+
+.errorPradio{
+  margin-top: 2px;
+}
+
+.none{
+  display: none;
+}
+
 @media (min-width: 768px) { 
   .row{
     display: flex;
