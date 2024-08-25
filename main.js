@@ -36,55 +36,66 @@ const lastNameP = document.querySelector('#lastName')
 const emailP = document.querySelector('#emailP')
 const messageP = document.querySelector('#messageP')
 const checkboxP = document.querySelector('#checkboxP')
-const radioP = document.querySelectorAll('#radioP')
+const radioP = document.getElementById('radioP')
+const option1 = document.getElementById('inputRadio1')
+const option2 = document.getElementById('inputRadio2')
 
 function error (){
+        let flag = true;
         if(InputFirstName.value !== ''){
                 firstNameP.className = 'none'
         }else{
                 firstNameP.className = 'errorP'
+                flag = false
         }
         if(InputLastName.value !== ''){
                 lastNameP.className = 'none'
         }else{
                 lastNameP.className = 'errorP'
+                flag = false
         }
         if(InputEmail.value !== ''){
                 emailP.className = 'none'
         }else{
                 emailP.className = 'errorP'
+                flag = false
         }
         if(MessageArea.value !== ''){
                 messageP.className = 'none'
         }else{
                 messageP.className = 'errorP'
+                flag = false
         }
         if(InputCheckbox.checked === true){
                 checkboxP.className = 'none'  
         }else{
                 checkboxP.className = 'errorP'
+                flag = false
         }
-        if(inputRadio1.checked){
+        if(option1.checked || option2.checked){
                 radioP.className = 'none'
-                
         }else{
                 radioP.className = 'errorP'
+                flag = false
         }
-        
-        
         time()
+        return flag
 }
-error()
+console.log(error());
+
 
 
 
 submit.addEventListener('click',(e)=>{
         e.preventDefault()
-        const alertBox = document.getElementById('alert')
-        alertBox.classList.add('show')
-        setTimeout(() => {
+        if(error()){
+                const alertBox = document.getElementById('alert')
+                alertBox.classList.add('show')
+                setTimeout(() => {
                 alertBox.classList.remove('show')
-        }, 3000);
+                }, 3000);    
+        }
+        
+       
 })
-
 
