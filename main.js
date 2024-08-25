@@ -9,7 +9,7 @@ const InputEmail = document.querySelector('#email')
 const InputRadioAll = document.querySelector('#InputRadioAll')
 const MessageArea = document.querySelector('#messagearea')
 const InputCheckbox = document.querySelector('#inputcheckbox')
-const submit = document.querySelector('#submit')
+const submit = document.querySelector('.submit')
 const errorDiv = document.querySelector('#error1')
 const errorInput = document.querySelectorAll('.errorInput')
 
@@ -77,5 +77,14 @@ function error (){
 error()
 
 
+
+submit.addEventListener('click',(e)=>{
+        e.preventDefault()
+        const alertBox = document.getElementById('alert')
+        alertBox.classList.add('show')
+        setTimeout(() => {
+                alertBox.classList.remove('show')
+        }, 3000);
+})
 
 
