@@ -136,7 +136,7 @@ input:hover, textarea:hover, .divRadio:hover{
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  margin: 10px 0 -10px 50px;
+  margin: 5px 0 -15px 50px;
 }
 
 .sub-div-h1{
@@ -147,6 +147,7 @@ input:hover, textarea:hover, .divRadio:hover{
 .sub-div-p{
   font-size: 15px;
   color: #E0F1E8;
+  margin: -10px 0 0 20px;
 }
 
 .alert{
